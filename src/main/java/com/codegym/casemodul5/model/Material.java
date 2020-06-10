@@ -10,7 +10,7 @@ public class Material {
     private String name;
     private String description;
     private Double price;
-    private String quantity;
+    private float quantity;
 
     @ManyToOne
     public Supplier supplier;
@@ -55,11 +55,11 @@ public class Material {
         this.price = price;
     }
 
-    public String getQuantity() {
+    public float getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(float quantity) {
         this.quantity = quantity;
     }
 }
